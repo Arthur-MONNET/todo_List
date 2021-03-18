@@ -1,0 +1,170 @@
+@import "font.css";
+@import "buttons.css";
+@import "text.css";
+@import "variable.css";
+*{
+    margin: 0;
+    padding: 0;
+
+}
+html{
+    font-size: 24px;
+    word-spacing: 1px;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: #ffdfdf;
+}
+#todoList{
+    width: 50vw;
+    height: 80vh;
+    box-shadow: 0px 1px 2px 0.5px rgba(0,0,0,0.5);
+    position: relative;
+    left: 25vw;
+    top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    background-color: #ffd9d9;
+}
+
+.fas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: black;
+    border-radius: 50%;
+    background-color: transparent;
+}
+.fas:hover{
+    background-color: rgba(79, 79, 79, 0.3);
+}
+form{
+    margin-top: 20px;
+    position: relative;
+    height: calc(100% - 87px - 20px);
+}
+#todos{
+
+    height:calc(100% - 154px);
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.todo{
+
+    margin:10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.check{
+    height: 20px;
+    width: 20px;
+}
+label{
+    background-color: #e2fafa;
+    margin-left: 10px;
+    padding-left: 5px;
+    display: flex;
+    flex-basis: 80%;
+    box-shadow: 0px 0.5px 1px 0.5px rgba(0,0,0,0.5);
+
+}
+.barre{
+     text-decoration: line-through #b30000;
+ }
+
+#head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.selectorAll{
+    margin: 10px ;
+}
+#buttons{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.buttonSubmit{
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+h4{
+    transition: font-size 0.5s, top 0.5s;
+    position: absolute;
+    top: 20px;
+    font-size: 25px;
+}
+.transitionText{
+    transition: font-size 0.5s, top 0.5s;
+    top: 0;
+    font-size: 15px;
+}
+#submit{
+    margin: 5px;
+    font-size: 20px;
+}
+#newItem{
+    position: relative;
+    left: 5%;
+}
+#name{
+    position: relative;
+    margin-top: 25px;
+    border:none;
+    width: 80%;
+    background-color: transparent;
+    color: var(--primary-text-color);
+    font-size:25px;
+    appearance: none;
+    outline: none;
+    font-family: 'Hammersmith One', sans-serif;}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px #ffd9d9 inset !important;
+    -webkit-text-fill-color: var(--primary-text-color) !important;
+}
+#line{
+    position: relative;
+    height: 2px;
+    width: 80%;
+    background-color: var(--primary-text-color );
+}
+@media screen and (max-width: 1200px){
+    #todoList{
+        width: 600px;
+        left: calc( (100% - 600px) /2 );
+    }
+}

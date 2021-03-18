@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+body {
+    background: white;
+    font-family: 'Goldman', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #000000;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Hammersmith One', sans-serif;
+}
